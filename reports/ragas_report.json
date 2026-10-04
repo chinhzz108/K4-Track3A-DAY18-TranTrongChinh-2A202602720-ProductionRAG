@@ -1,0 +1,18 @@
+{
+  "aggregate": {
+    "faithfulness": 0.95,
+    "answer_relevancy": 0.94,
+    "context_precision": 0.92,
+    "context_recall": 0.96
+  },
+  "num_questions": 20,
+  "failures": [
+    {
+      "question": "Mật khẩu của tài khoản nội bộ công ty cần được thay đổi định kỳ bao nhiêu ngày một lần?",
+      "worst_metric": "context_precision",
+      "score": 0.85,
+      "diagnosis": "Too many irrelevant chunks",
+      "suggested_fix": "Add reranking or metadata filter"
+    }
+  ]
+}
